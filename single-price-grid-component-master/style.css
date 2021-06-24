@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6eff6;
+    Font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    height: 70%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1%;
+}
+
+.part-1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2% 2% 0 0;
+    box-shadow: 0 10px 50px 2px rgba(119, 122, 119, 0.246);
+    padding: 10%;
+}
+
+.part-2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+    background-color: #2bb3b1;
+    border-radius:  0 0 0 2%;
+    padding: 5% 5% 5% 5%;
+}
+
+.join{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    background-color: #4abebd;
+    border-radius:  0 0 2% 0;
+    color: #91dcdd;
+    padding: 5% 10% 5% 5%;
+}
+
+button{
+    height: 25%; 
+    width: 80%;
+    background-color: #c0df34;
+    color: #e3ebf3;
+    outline: hidden;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.171);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 375px){
+    
+    .container{
+        height: 90%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 1%;
+    }
+
+    .part-1{
+        height: 50%;
+        border-radius: 2% 2% 0 0;
+    }
+
+    .part-2{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub{
+        height: 100%;
+        width: 100%;
+        border-radius: 00000;
+    }
+
+    .join{
+        height: 100%;
+        width: 100%;
+        border-radius:  0 0 2% 2%;
+    }
+}
